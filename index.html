@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+   <link rel="stylesheet" href="yeni.css">
+    <title>Document</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+   
+    
+    
+</head>
+<body>
+    
+
+
+    <header id="header">
+        <div class="header">
+            <div class="container">
+                <div class="header-navbar">
+                    <div class="header-logo">
+                        <h2>TeknoClass</h2>
+                    </div>
+                    <div class="header-menu">
+                        <ul id="menu_items">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Contact</a></li>
+
+                        </ul>
+                        <i class="fa-solid fa-bars" id="menu-icon" onclick="menuToggle();"></i>
+
+                    </div>
+
+                </div>
+                <div class="header-text">
+                    <h1>TeknoClass</h1>
+                    <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                    <a href="#" class="btn-strt">Click</a>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="about">
+        <div class="about">
+            <div class="container">
+                <div class="about-title">
+                    <h2>About</h2>
+                </div>
+                <div class="about-content">
+                    <div class="about-img anime-left">
+                        <img src="10.jpg" alt="">
+                    </div>
+                    <div class="about-text anime-right">
+                        <h4>TeknoClass</h4>
+                        <div class="icon">
+                            <i class="fa-solid fa-asterisk"></i>                     
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam odio distinctio fugiat aperiam quis voluptatem?</p>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="project-title">
+        <h2>Projects</h2>
+        
+    </div>
+
+    <section id="port">
+        <div iv class="port">
+            
+            <div class="port-item img1">
+                <img src="html.jpg" alt="">
+                <div class="overlay">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="port-item img2">
+                <img src="css.jpg" alt="">
+                <div class="overlay">
+                    <p>Lorem ipsum dolor sit amet.</p>               
+                 </div>
+            </div>
+            <div class="port-item img3">
+                <img src="js.jpg" alt="">
+                <div class="overlay">
+                    <p>Lorem ipsum dolor sit amet.</p>              
+                  </div>
+            </div>
+            <div class="port-item img4">
+                <img src="php.jpg" alt="">
+                <div class="overlay">
+                    <p>Lorem ipsum dolor sit amet.</p>               
+                 </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <div class="contact">
+            <div class="container">
+                <div class="page-tittle">
+                    <h2>Contact</h2>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-item anime-top">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>053 777 777 77 </p>
+                        <br>
+                        <p>054 666 666 66</p>
+
+                        
+                        
+                    </div>
+                    <div class="contact-item anime-bottom">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, et. </p>
+                        
+                        
+                    </div>
+                    
+                    <div class="contact-item anime-top">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>Lorem, ipsum dolor.@gmaik.com</p>
+                        
+            
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="footer">
+        <div class="footer">
+            <div class="footer-content">
+                <div class="page-tittle">
+                    <h2>About Us</h2>
+                </div>
+                <div class="footer-copy">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, autem?</p>
+                    <br>
+                </div>
+                <nav class="footer-social">
+                    <ul>
+                        <li> 
+                            <a href="#"><i class="fa-brands fa-google"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        </li>
+                
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        window.sr=ScrollReveal();
+        sr.reveal('.anime-left',{
+            origin:'left',
+            duration:1000,
+            distance:'25rem',
+            delay:300
+        });
+        sr.reveal('.anime-right',{
+            origin:'right',
+            duration:1000,
+            distance:'25rem',
+            delay:600
+        });
+        sr.reveal('.anime-top',{
+            origin:'top',
+            duration:1000,
+            distance:'25rem',
+            delay:600
+        });
+        sr.reveal('.anime-bottom',{
+            origin:'bottom',
+            duration:1000,
+            distance:'25rem',
+            delay:600
+        });
+    </script>
+
+
+
+    <script>
+        ScrollReveal().reveal('.img1',{delay:250});
+        ScrollReveal().reveal('.img2',{delay:500});
+        ScrollReveal().reveal('.img3',{delay:750});
+        ScrollReveal().reveal('.img4',{delay:1000});
+
+    </script>
+
+
+
+
+
+
+    <script>
+        var menu_items=document.getElementById('menu_items');
+        menu_items.style.maxHeight="0px";
+
+        function menuToggle(){
+
+            if(menu_items.style.maxHeight=="0px"){
+
+                menu_items.style.maxHeight="200px";
+            }
+            else{
+                menu_items.style.maxHeight="0px";
+            }
+
+
+
+        }
+
+
+    </script>
+    
+</body>
+</html>
